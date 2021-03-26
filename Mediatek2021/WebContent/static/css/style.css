@@ -1,0 +1,155 @@
+@charset "ISO-8859-1";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC");
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    background: #fafafa;
+  }
+ 
+
+.background-image-container{
+  margin : 0 auto ;
+    background-size : cover;
+    Background-position : center center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+/*.bg-connexion {
+  background :url("../static/img/connexion.jpg")70% 0.5;
+  opacity: 0.5;
+}*/
+
+  /* ------ CONNEXION ------ */
+  input[type="text"], input[type="password"]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+  }
+  
+  
+  label {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+  }
+  
+  input[type="submit"] {
+    background-color: #223a1c;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin : 10px 0px 15px 0px ; 
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #223a1c;
+  }
+  
+  .retour{
+  	background-color: #223a1c;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin : 10px 0px 15px 0px ;
+  }
+  
+  .retour:hover {
+    background-color: #223a1c;
+  }
+  
+  .container {
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    margin-top: 40vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%); 
+  }
+  h1 {
+    color: #223a1c;
+    width: 100%;
+  }
+  
+
+  /* ------ ACCUEIL ------ */
+
+  .btn_option {
+    outline: none;
+    margin : 5px ; 
+    height: 40px;
+    text-align: center;
+    width: 100%;
+    border-radius: 40px;
+    background: #fff;
+    border: 2px solid #223a1c;
+    color: #223a1c;
+    letter-spacing: 1px;
+   
+  }
+  header {
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  .btn_option:hover{
+    background: #223a1c;
+    color: #fff;
+  }
+
+  #form_option1 , #form_option2, #form_option3{
+    display: none;
+  }
+  header h2 {
+    font: normal 4em "Playfair Display SC", serif;
+    text-align: center;
+    color: #223a1c;
+  }
+  nav {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    flex-grow: 1;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    transform: scaleX(0);
+    background: #333;
+    transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+  }
+  
+  nav a:hover::after {
+    transform: scaleX(1);
+  }
+
+
